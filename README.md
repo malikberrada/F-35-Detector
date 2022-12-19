@@ -26,7 +26,7 @@ This notebook was written to detect the naval version of the F-35 (F-35B). We de
       &nbsp;&nbsp;&nbsp;&nbsp;```model = JetDtctnNetBslne.build(width, height, channels)  ```
         
       &nbsp;&nbsp;&nbsp;&nbsp;```trainHelper = TrainModel(model, 'best_weights_baseline_3.h5')```
-      &nbsp;&nbsp;&nbsp;&nbsp;```trainHelper.trainModel()```
+      &nbsp;&nbsp;&nbsp;&nbsp;```trainHelper.trainModel()```<br>
       &nbsp;&nbsp;&nbsp;&nbsp;```print("---Model Trained---")```
         
     - ```print("---Loading the Model---")```
