@@ -11,7 +11,7 @@ This notebook was written to detect the naval version of the F-35 (F-35B). We de
   - Run the command ```pip install Keras```
   - Run the command ```pip install -U matplotlib```
   - Run the command ```pip install seaborn```
-## Using Tips
+## Tips
   - Once you have defined the ```JetDtctnNetBslne```, ```TrainModel```, and ```Detector``` classes, run the following commands to train the model  :
     - ```satWidth, satHeight = 1280, 720```
     - ```imgWidth, imgHeight = 100, 100```
