@@ -21,7 +21,7 @@ This notebook was written to detect the naval version of the F-35 (F-35B). We de
     - ```trainFile = "Train.py"```
     - ```width, height, channels = 100, 100, 3```
     
-    - ```if not os.path.isfile(path2Weights):  ```
+    - ```if not os.path.isfile(path2Weights):```<br>
       &nbsp;&nbsp;&nbsp;&nbsp;```print("---Training The Model---")  ```
       &nbsp;&nbsp;&nbsp;&nbsp;```model = JetDtctnNetBslne.build(width, height, channels)  ```
         
