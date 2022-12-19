@@ -36,7 +36,7 @@ This notebook was written to detect the naval version of the F-35 (F-35B). We de
 You can predict real images by running the following commands:
   - ```lst_jetsPath = []```
   - ```for i in range(1,49)```:<br>
-    <t>```lst_jetsPath.append("../Real images pred set/jets-real-" + str(i) + "/")```<\t>
+        ```lst_jetsPath.append("../Real images pred set/jets-real-" + str(i) + "/")```<\t>
       
   - ```print("Predicting image ", lst_jetsPath[47], "...")```
   - ```detect = Detector(model, lst_jetsPath[47])```
