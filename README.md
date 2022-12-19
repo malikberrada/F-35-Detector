@@ -1,5 +1,5 @@
 # F-35-Detector
-This notebook was written to detect the naval version of the F-35 (F-35B). We detected the cabin's center of gravity and drew a 100 pixel side square around it to identify the center of the aircraft and perform edge detection. For this we used Detecron2, OpenCV and Pillow. For aircraft prediction, we used Convolutional Neural Networks with Keras/TensorFlow.
+This notebook was written to detect the F-35B in images. We detected the center of gravity of the cabin and drew a 100px square around it to identify the center of the aircraft and perform edge detection. For this we used Detecron2, OpenCV and Pillow. For aircraft prediction, we used convolutional neural networks with Keras/TensorFlow.
 ## Requirements
 - To run the notebook do the following:
   - Install Detectron2 by following this tutorial: https://medium.com/@yogeshkumarpilli/how-to-install-detectron2-on-windows-10-or-11-2021-aug-with-the-latest-build-v0-5-c7333909676f
