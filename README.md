@@ -11,7 +11,7 @@ This notebook was written to detect the naval version of the F-35 (F-35B). We de
   - Run the command ```pip install Keras```
   - Run the command ```pip install -U matplotlib```
   - Run the command ```pip install seaborn```
-  - Once you have defined the ```JetDtctnNetBslne```, ```TrainModel```, and ```Detector``` classes, run the following commands to train them:
+  - Once you have defined the ```JetDtctnNetBslne```, ```TrainModel```, and ```Detector``` classes, run the following commands to train the model  :
     - ```satWidth, satHeight = 1280, 720```
     - ```imgWidth, imgHeight = 100, 100```
     - ```channels = 3```
@@ -34,18 +34,18 @@ This notebook was written to detect the naval version of the F-35 (F-35B). We de
     - ```print("---Model Loaded---")```
 
 You can predict real images by running the following commands:
-- ```lst_jetsPath = []```
-- ```for i in range(1,49):
-    lst_jetsPath.append("../Real images pred set/jets-real-" + str(i) + "/")```
-    
-- ```print("Predicting image ", lst_jetsPath[47], "...")```
-- ```detect = Detector(model, lst_jetsPath[47])```
-- ```probas, probaMap = detect.predictProba()```
-- ```results = detect.cleanProba(probas)```
-- ```detect.drawBoxes()```
-- ```detect.drawHeatmap(probaMap)```
-- ```detect = []```
-- ```probas, probaMap = [], []```
-- ```results = []```
-- ```print("Image ", lst_jetsPath[47], "predicted !")```
+  - ```lst_jetsPath = []```
+  - ```for i in range(1,49):
+      lst_jetsPath.append("../Real images pred set/jets-real-" + str(i) + "/")```
+      
+  - ```print("Predicting image ", lst_jetsPath[47], "...")```
+  - ```detect = Detector(model, lst_jetsPath[47])```
+  - ```probas, probaMap = detect.predictProba()```
+  - ```results = detect.cleanProba(probas)```
+  - ```detect.drawBoxes()```
+  - ```detect.drawHeatmap(probaMap)```
+  - ```detect = []```
+  - ```probas, probaMap = [], []```
+  - ```results = []```
+  - ```print("Image ", lst_jetsPath[47], "predicted !")```
 
