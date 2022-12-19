@@ -22,12 +22,12 @@ This notebook was written to detect the naval version of the F-35 (F-35B). We de
     - ```width, height, channels = 100, 100, 3```
     
     - ```if not os.path.isfile(path2Weights):  ```
-        ```print("---Training The Model---")  ```
-        ```model = JetDtctnNetBslne.build(width, height, channels)  ```
+      &nbsp;&nbsp;&nbsp;&nbsp;```print("---Training The Model---")  ```
+      &nbsp;&nbsp;&nbsp;&nbsp;```model = JetDtctnNetBslne.build(width, height, channels)  ```
         
-        ```trainHelper = TrainModel(model, 'best_weights_baseline_3.h5')  ```
-        ```trainHelper.trainModel()  ```
-        ```print("---Model Trained---")```
+      &nbsp;&nbsp;&nbsp;&nbsp;```trainHelper = TrainModel(model, 'best_weights_baseline_3.h5')  ```
+      &nbsp;&nbsp;&nbsp;&nbsp;```trainHelper.trainModel()  ```
+      &nbsp;&nbsp;&nbsp;&nbsp;```print("---Model Trained---")```
         
     - ```print("---Loading the Model---")```
     - ```model = load_model(path2Weights)```
