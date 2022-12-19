@@ -21,13 +21,13 @@ This notebook was written to detect the naval version of the F-35 (F-35B). We de
     - ```trainFile = "Train.py"```
     - ```width, height, channels = 100, 100, 3```
     
-    - ```if not os.path.isfile(path2Weights):
-        print("---Training The Model---")
-        model = JetDtctnNetBslne.build(width, height, channels)
+    - ```if not os.path.isfile(path2Weights):  ```
+        ```print("---Training The Model---")  ```
+        ```model = JetDtctnNetBslne.build(width, height, channels)  ```
         
-        trainHelper = TrainModel(model, 'best_weights_baseline_3.h5')
-        trainHelper.trainModel()
-        print("---Model Trained---")```
+        ```trainHelper = TrainModel(model, 'best_weights_baseline_3.h5')  ```
+        ```trainHelper.trainModel()  ```
+        ```print("---Model Trained---")```
         
     - ```print("---Loading the Model---")```
     - ```model = load_model(path2Weights)```
@@ -35,8 +35,8 @@ This notebook was written to detect the naval version of the F-35 (F-35B). We de
 
 You can predict real images by running the following commands:
   - ```lst_jetsPath = []```
-  - ```for i in range(1,49):
-      lst_jetsPath.append("../Real images pred set/jets-real-" + str(i) + "/")```
+  - ```for i in range(1,49)```:
+      ```lst_jetsPath.append("../Real images pred set/jets-real-" + str(i) + "/")```
       
   - ```print("Predicting image ", lst_jetsPath[47], "...")```
   - ```detect = Detector(model, lst_jetsPath[47])```
